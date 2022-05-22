@@ -17,7 +17,7 @@ location_filter = st.sidebar.multiselect(
 ih_filter=st.sidebar.radio(
     'choose income',
     ('L','M','H'))
-df_housing = df_housing[df_housing.median_house_value <= (price_filter)]
+df_housing = df_housing[df_housing.median_house_value <= 'price_filter']
 
 df_housing = df_housing[df_housing.ocean_proximity.isin(location_filter)]
 
